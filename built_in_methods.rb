@@ -79,6 +79,23 @@ p name.swapcase
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# Method 1
+# The `.to_f` method is called on the cost variable, which stores the integer object 5.
+# The `.to_f` method converts the Integer value into a Float.
+# In this example, the return value is "25.0".
+# The `p` command prints the return value to the console.
+
+cost = 25
+p cost.to_f
+
+# Method 2
+# The `.remainder` method is called on the cookies variable, which stores the integer object 9.
+# The `.remainder` method finds the remainder after dividing the integer variable by an argument which is passed through, which in this case is the integer 4.
+# In this example, the return value is "1".
+# The `p` command prints the return value to the console.
+
+cookies = 9
+p cookies.remainder(4)
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
