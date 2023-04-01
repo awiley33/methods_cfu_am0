@@ -53,6 +53,24 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# Method 1
+# The `.lstrip` method is called on the hometown variable, which stores the string object "   Chicago  ".
+# The `.lstrip` method returns the string variable with the leading whitespace removed (any spaces in front of the characters).
+# In this example, the return value is "Chicago  ", with 3 leading spaces removed (the spaces that follow the characters remain).
+# The `p` command prints the return value to the console.
+
+hometown = "   Chicago  "
+p hometown.lstrip
+
+
+# Method 2
+# The `.swapcase` method is called on the name variable, which stores the string object "Anna Wiley".
+# The `.swapcase` method returns a String value with the cases reversed, so upper case characters will be returned in lower case and vice-versa.
+# In this example, the return value is "aNNA wILEY"
+# The `p` command prints the return value to the console.
+
+name = "Anna Wiley"
+p name.swapcase
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
