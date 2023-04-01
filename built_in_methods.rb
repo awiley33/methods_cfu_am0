@@ -10,18 +10,32 @@
 
 
 "Hello World".include?("Hello")
-
+# The `include?` method is called on the string object "Hello World"
+# The argument "Hello" is passed; the method is checking to see if the Argument is present in the String.
+# The return value is a Boolean - in this case, it is true.
 
 "Hello World".end_with?("Hello")
-
+# The `end_with?` method is called on the string object "Hello World"
+# The argument "Hello" is passed through the method; this method is checking if String ends with the argument 
+# The return value is either true or false - in this case false.
 
 "Hello World".end_with?("rld")
-
+# The `end_with?` method is called on the string object "Hello World"
+# The argument "rld" is passed through the method; this method is checking if String ends with the argument 
+# The return value is either true or false - in this case true.
 
 12.even?
-
+# The example above simply states the `.even?` method
+# The method calls on an integer and determines whether it is even - returning a value of either true or false.
+# I added the integer 5 to make my terminal input `5.even?` and the return value was `false`.
+# # there is no argument to be passed on the variable
 
 18.next
+# the example above states the `.next` method
+# this method calls on an integer and adds `1` (+1) to the integer to determine the succeeding integer
+# I entered a terminal input of `5.next` and the return value was `6`.
+# there is no argument to be passed on the variable
+
 
 
 
