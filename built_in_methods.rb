@@ -103,3 +103,22 @@ p cookies.remainder(4)
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+
+# Method 1
+# The `.count` method will find count the number of elements in a given array
+# When an argument is passed through, it counts the number of elements equal to that argument
+# Below, the variable birthdate is assigned to an array of Integer objects
+# The argument `9` is passed through and the `p` prints the return value to the console, which is `2`
+# Had no argument been passed, it would have had a return value of `7` since there are 7 elements contained in the array.
+birthdate = [4, 9, 2, 15, 12, 24, 9]
+p birthdate.count(9)
+
+
+
+# Method 2
+# The `.fetch` method returns the value of the element signalled by an argument which contains a specified index position.
+# The `eggs.found` variable contains an array of integers.
+# the `.fetch` method iterates over the array to locate the element in index position 4 and prints the return value of that element to the console, which is `6`.
+eggs_found = [4, 10, 6, 8, 6, 7]
+p eggs_found.fetch(4)
