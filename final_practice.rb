@@ -26,25 +26,50 @@ custom_greeting("Justin")
 #   the return value is `Welcome, Anna!` and `Welcome, Justin!``
 
 # How many arguments did you pass your method?
-#   I passed 2 separate arguments
+#   The method itself passes a single argument each time the method is called. I called the method twice so passed 2 altogether.
 
 # What data type was your argument(s)?
-# My arguments were Strings.
+#   My arguments were Strings.
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+def greet_person(first, middle, last)
+    puts "My full name is #{first} #{middle} #{last}."
+end
 
+greet_person("Anna", "Mae", "Wiley")
+greet_person("Amy", "Renee", "Brodeur")
+
+# What is the return value of your method?
+#   My full name is Anna Mae Wiley.
+#   My full name is Amy Renee Brodeur.
+
+# How many arguments did you pass your method?
+#   The method passes 3 arguments each time it is run.
+
+# What data type was your argument(s)?
+#   The arguments are Strings.
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
+def square(num)
+    puts num*num
+end 
+puts square(5)
+puts square(9)
+
 # What is the return value of your method?
+#   the return values are `25` and `81`
+
 # How many arguments did you pass your method?
+#   One argument is passed per method call, I called the method twice.
+
 # What data type was your argument(s)?
+#   The argument was an Integer.
+
+######### I tried the challenge but couldn't get the right solution to print.
 
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
@@ -61,3 +86,15 @@ check_stock(0, "Cheese");
 
 check_stock(1, "Salsa");
 # => "Salsa - running LOW"
+
+def check_stock(num, food)
+    if num >= 4
+        puts "#{food} is stocked"
+    end
+    if num < 4 && num > 0
+        puts "#{food} - running LOW."
+    end
+    if num == 0
+        puts "#{food} - OUT of stock."
+    end
+end
