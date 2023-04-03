@@ -6,15 +6,30 @@
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
+def greeting
+    puts "Welcome!"
+end
 # What is the return value of your method?
-# How many arguments did you pass your method?
+#   The return value is `Welcome!`
 
+# How many arguments did you pass your method?
+#   No arguments were passed.
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
+def custom_greeting(name)
+    puts "Welcome, #{name}!"
+end
+custom_greeting("Anna")
+custom_greeting("Justin")
 
 # What is the return value of your method?
+#   the return value is `Welcome, Anna!` and `Welcome, Justin!``
+
 # How many arguments did you pass your method?
+#   I passed 2 separate arguments
+
 # What data type was your argument(s)?
+# My arguments were Strings.
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
